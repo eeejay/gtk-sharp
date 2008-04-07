@@ -1,0 +1,50 @@
+<Type Name="PropertyState" FullName="Gdk.PropertyState">
+  <TypeSignature Language="C#" Maintainer="auto" Value="public enum PropertyState" />
+  <AssemblyInfo>
+    <AssemblyName>gdk-sharp</AssemblyName>
+    <AssemblyPublicKey>
+    </AssemblyPublicKey>
+    <AssemblyVersion>2.12.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the <link location="node:gtk-sharp/programming/threads">Gtk# Thread Programming</link> for details.</ThreadSafetyStatement>
+  <Docs>
+    <summary>Specifies the type of a property change for a <see cref="T:Gdk.EventProperty" />.</summary>
+    <remarks>None.</remarks>
+  </Docs>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>GLib.GType(typeof(Gdk.PropertyStateGType))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Members>
+    <Member MemberName="NewValue">
+      <MemberSignature Language="C#" Value="NewValue" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Gdk.PropertyState</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>The property value was changed.</summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="Delete" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Gdk.PropertyState</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>The property value was deleted.</summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

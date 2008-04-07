@@ -1,0 +1,25 @@
+<Type Name="ColorSelectionChangePaletteFunc" FullName="Gtk.ColorSelectionChangePaletteFunc">
+  <TypeSignature Language="C#" Maintainer="auto" Value="public delegate void ColorSelectionChangePaletteFunc(Color colors, int n_colors);" />
+  <AssemblyInfo>
+    <AssemblyName>gtk-sharp</AssemblyName>
+    <AssemblyVersion>2.12.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the <link location="node:gtk-sharp/programming/threads">Gtk# Thread Programming</link> for details.</ThreadSafetyStatement>
+  <Docs>
+    <param name="colors">To be added.</param>
+    <param name="n_colors">To be added.</param>
+    <summary>Delegate to specify function signature for methods that change the color palette in a <see cref="T:Gtk.ColorSelectionDialog" />.</summary>
+    <remarks />
+  </Docs>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Members />
+  <Parameters>
+    <Parameter Name="colors" Type="Gdk.Color" />
+    <Parameter Name="n_colors" Type="System.Int32" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+</Type>

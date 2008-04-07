@@ -1,0 +1,76 @@
+<Type Name="TreeViewDropPosition" FullName="Gtk.TreeViewDropPosition">
+  <TypeSignature Language="C#" Maintainer="auto" Value="public enum TreeViewDropPosition" />
+  <AssemblyInfo>
+    <AssemblyName>gtk-sharp</AssemblyName>
+    <AssemblyPublicKey>
+    </AssemblyPublicKey>
+    <AssemblyVersion>2.12.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the <link location="node:gtk-sharp/programming/threads">Gtk# Thread Programming</link> for details.</ThreadSafetyStatement>
+  <Docs>
+    <summary>An enumeration for determining where a dropped row goes.</summary>
+    <remarks />
+  </Docs>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>GLib.GType(typeof(Gtk.TreeViewDropPositionGType))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Members>
+    <Member MemberName="Before">
+      <MemberSignature Language="C#" Value="Before" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Gtk.TreeViewDropPosition</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Drop before this row.</summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="After">
+      <MemberSignature Language="C#" Value="After" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Gtk.TreeViewDropPosition</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Drop after this row.</summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IntoOrBefore">
+      <MemberSignature Language="C#" Value="IntoOrBefore" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Gtk.TreeViewDropPosition</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Drop as a child of this row (with fallback to before if into is not possible).</summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IntoOrAfter">
+      <MemberSignature Language="C#" Value="IntoOrAfter" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Gtk.TreeViewDropPosition</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Drop as a child of this row (with fallback to after if into is not possible).</summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

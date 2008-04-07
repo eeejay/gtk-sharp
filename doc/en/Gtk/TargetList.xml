@@ -1,0 +1,281 @@
+<Type Name="TargetList" FullName="Gtk.TargetList">
+  <TypeSignature Language="C#" Maintainer="auto" Value="public class TargetList : GLib.Opaque" />
+  <AssemblyInfo>
+    <AssemblyName>gtk-sharp</AssemblyName>
+    <AssemblyPublicKey>
+    </AssemblyPublicKey>
+    <AssemblyVersion>2.12.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the <link location="node:gtk-sharp/programming/threads">Gtk# Thread Programming</link> for details.</ThreadSafetyStatement>
+  <Docs>
+    <summary>A list of potential targets for a paste or drag-and-drop operation.</summary>
+    <remarks />
+  </Docs>
+  <Base>
+    <BaseTypeName>GLib.Opaque</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TargetList ();" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
+      <Parameters />
+      <Docs>
+        <summary>Basic constructor</summary>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TargetList (Gtk.TargetEntry[] targets);" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
+      <Parameters>
+        <Parameter Name="targets" Type="Gtk.TargetEntry[]" />
+      </Parameters>
+      <Docs>
+        <summary>Constructor</summary>
+        <param name="targets">an array of <see cref="T:Gtk.TargetEntry" /></param>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TargetList (IntPtr raw);" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
+      <Parameters>
+        <Parameter Name="raw" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <summary>Internal constructor</summary>
+        <param name="raw">a <see cref="T:System.IntPtr" /></param>
+        <remarks>
+          <para>This is an internal constructor, and should not be used by user code.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (Gdk.Atom target, uint flags, uint info);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="Gdk.Atom" />
+        <Parameter Name="flags" Type="System.UInt32" />
+        <Parameter Name="info" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <summary>Add a target type to the target list</summary>
+        <param name="target">the target type, as a <see cref="T:Gdk.Atom" /></param>
+        <param name="flags">target flags (for a drag-and-drop target, this is a <see cref="T:Gtk.TargetFlags" /> value)</param>
+        <param name="info">application-defined ID for this target type</param>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (string target, uint flags, uint info);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.String" />
+        <Parameter Name="flags" Type="System.UInt32" />
+        <Parameter Name="info" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <summary>Add a target type to the target list</summary>
+        <param name="target">the target type, as a string</param>
+        <param name="flags">target flags (for a drag-and-drop target, this is a <see cref="T:Gtk.TargetFlags" /> value)</param>
+        <param name="info">application-defined ID for this target type</param>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="AddTable">
+      <MemberSignature Language="C#" Value="public void AddTable (Gtk.TargetEntry[] targets);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targets" Type="Gtk.TargetEntry[]" />
+      </Parameters>
+      <Docs>
+        <summary>Add entries to the target list</summary>
+        <param name="targets">an array of <see cref="T:Gtk.TargetEntry" /></param>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Find">
+      <MemberSignature Language="C#" Value="public bool Find (Gdk.Atom target, out uint info);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="Gdk.Atom" />
+        <Parameter Name="info" Type="System.UInt32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <summary>Find a given target type</summary>
+        <param name="target">the target type to find, as a <see cref="T:Gdk.Atom" /></param>
+        <param name="info">on output, will contain the target's application-defined ID</param>
+        <returns>
+          <see langword="true" /> if the target was found</returns>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Find">
+      <MemberSignature Language="C#" Value="public bool Find (string target, out uint info);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.String" />
+        <Parameter Name="info" Type="System.UInt32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <summary>Find a given target type</summary>
+        <param name="target">the target type to find, as a string</param>
+        <param name="info">on output, will contain the target's application-defined ID</param>
+        <returns>
+          <see langword="true" /> if the target was found</returns>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (Gdk.Atom target);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="Gdk.Atom" />
+      </Parameters>
+      <Docs>
+        <summary>Remove an entry from the target list</summary>
+        <param name="target">the target to remove, as a <see cref="T:Gdk.Atom" /></param>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (string target);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <summary>Remove an entry from the target list</summary>
+        <param name="target">the target to remove, as a string</param>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="AddUriTargets">
+      <MemberSignature Language="C#" Value="public void AddUriTargets (uint info);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <summary>Adds the target types for URIs to the target list</summary>
+        <param name="info">application-defined ID for these target types</param>
+        <remarks>Appends the URI targets supported by <see cref="T:Gtk.Selection" /> to the target list. All targets are
+        added with the same <paramref name="info" />.</remarks>
+        <since version="Gtk# 2.6" />
+      </Docs>
+    </Member>
+    <Member MemberName="AddImageTargets">
+      <MemberSignature Language="C#" Value="public void AddImageTargets (uint info, bool writable);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.UInt32" />
+        <Parameter Name="writable" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <summary>Adds the target types for images to the target list</summary>
+        <param name="info">application-defined ID for these target types</param>
+        <param name="writable">if <see langword="true" />, only add the target types for which Gtk knows how to convert a <see cref="T:Gdk.Pixbuf" /> to the format.</param>
+        <remarks>Appends the image targets supported by <see cref="T:Gtk.Selection" /> to the target list. All targets are
+        added with the same <paramref name="info" />.</remarks>
+        <since version="Gtk# 2.6" />
+      </Docs>
+    </Member>
+    <Member MemberName="AddTextTargets">
+      <MemberSignature Language="C#" Value="public void AddTextTargets (uint info);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <summary>Adds the target types for text to the target list</summary>
+        <param name="info">application-defined ID for these target types</param>
+        <remarks>Appends the text targets supported by <see cref="T:Gtk.Selection" /> to the target list. All targets are
+        added with the same <paramref name="info" />.</remarks>
+        <since version="Gtk# 2.6" />
+      </Docs>
+    </Member>
+    <Member MemberName="op_Explicit">
+      <MemberSignature Language="C#" Value="public static Gtk.TargetEntry[] op_Explicit (Gtk.TargetList list);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Gtk.TargetEntry[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="list" Type="Gtk.TargetList" />
+      </Parameters>
+      <Docs>
+        <param name="list">A <see cref="T:Gtk.TargetList" />.</param>
+        <summary>Converts a <see cref="T:Gtk.TargetList" /> to an array of <see cref="T:Gtk.TargetEntry" />.</summary>
+        <returns>An equivalent array of <see cref="T:Gtk.TargetEntry" />.</returns>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="AddRichTextTargets">
+      <MemberSignature Language="C#" Value="public void AddRichTextTargets (uint info, bool deserializable, Gtk.TextBuffer buffer);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.UInt32" />
+        <Parameter Name="deserializable" Type="System.Boolean" />
+        <Parameter Name="buffer" Type="Gtk.TextBuffer" />
+      </Parameters>
+      <Docs>
+        <param name="info">an ID to be passed back to the application.</param>
+        <param name="deserializable">if <see langword="true" />, then deserializable targets will be added, otherwise serializable targets.</param>
+        <param name="buffer">the text buffer containing the registered targets.</param>
+        <summary>Appends the rich text targets registered with a text buffer.</summary>
+        <remarks>See <see cref="M:Gtk.TextBuffer.RegisterSerializeFormat" /> and <see cref="M:Gtk.TextBuffer.RegisterDeserializeFormat" /> for details of registration. </remarks>
+        <since version="Gtk# 2.10" />
+      </Docs>
+    </Member>
+    <Member MemberName="GType">
+      <MemberSignature Language="C#" Value="public static GLib.GType GType { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>GLib.GType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Native GType.</summary>
+        <value />
+        <remarks>For internal use by language bindings.</remarks>
+        <since version="Gtk# 2.10" />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

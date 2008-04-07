@@ -1,0 +1,46 @@
+<Type Name="FocusedArgs" FullName="Gtk.FocusedArgs">
+  <TypeSignature Language="C#" Value="public class FocusedArgs : GLib.SignalArgs" Maintainer="auto" />
+  <AssemblyInfo>
+    <AssemblyName>gtk-sharp</AssemblyName>
+    <AssemblyPublicKey>
+    </AssemblyPublicKey>
+    <AssemblyVersion>2.12.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the <link location="node:gtk-sharp/programming/threads">Gtk# Thread Programming</link> for details.</ThreadSafetyStatement>
+  <Docs>
+    <summary>Event data.</summary>
+    <remarks>
+      <para>The <see cref="M:Gtk.Widget.Focused" /> event invokes <see cref="T:Gtk.FocusedHandler" /> delegates which pass event data via this class.</para>
+    </remarks>
+  </Docs>
+  <Base>
+    <BaseTypeName>GLib.SignalArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FocusedArgs ();" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
+      <Parameters />
+      <Docs>
+        <summary>Public Constructor.</summary>
+        <remarks>Create a new <see cref="T:Gtk.FocusedArgs" /> instance with this constructor if you need to invoke a <see cref="T:Gtk.FocusedHandler" /> delegate.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Direction">
+      <MemberSignature Language="C#" Value="public Gtk.DirectionType Direction { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Gtk.DirectionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>How the focus on this widget behaves.</summary>
+        <value>
+          <see cref="T:Gtk.DirectionType" />
+        </value>
+        <remarks />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

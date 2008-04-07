@@ -1,0 +1,29 @@
+<Type Name="IdleHandler" FullName="GLib.IdleHandler">
+  <TypeSignature Language="C#" Maintainer="auto" Value="public delegate bool IdleHandler();" />
+  <AssemblyInfo>
+    <AssemblyName>glib-sharp</AssemblyName>
+    <AssemblyVersion>2.12.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the <link location="node:gtk-sharp/programming/threads">Gtk# Thread Programming</link> for details.</ThreadSafetyStatement>
+  <Docs>
+    <summary>Delegate to invoke during idle time</summary>
+    <remarks>
+      <para>
+	The handler specified by the delegate will be invoked during
+	the GLib main loop execution.  If the handler returns <see langword="true" /> the handler is kept for another round of
+	Idle execution, if <see langword="false" /> is returned, the
+	handler is removed.
+      </para>
+    </remarks>
+    <returns>To be added.</returns>
+  </Docs>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Members />
+  <Parameters>
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Boolean</ReturnType>
+  </ReturnValue>
+</Type>

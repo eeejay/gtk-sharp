@@ -1,0 +1,70 @@
+<Type Name="TagAppliedArgs" FullName="Gtk.TagAppliedArgs">
+  <TypeSignature Language="C#" Value="public class TagAppliedArgs : GLib.SignalArgs" Maintainer="auto" />
+  <AssemblyInfo>
+    <AssemblyName>gtk-sharp</AssemblyName>
+    <AssemblyPublicKey>
+    </AssemblyPublicKey>
+    <AssemblyVersion>2.12.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the <link location="node:gtk-sharp/programming/threads">Gtk# Thread Programming</link> for details.</ThreadSafetyStatement>
+  <Docs>
+    <summary>Event data.</summary>
+    <remarks>
+      <para>The <see cref="M:Gtk.TextBuffer.TagApplied" /> event invokes <see cref="T:Gtk.TagAppliedHandler" /> delegates which pass event data via this class.</para>
+    </remarks>
+  </Docs>
+  <Base>
+    <BaseTypeName>GLib.SignalArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TagAppliedArgs ();" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
+      <Parameters />
+      <Docs>
+        <summary>Public Constructor.</summary>
+        <remarks>Create a new <see cref="T:Gtk.TagAppliedArgs" /> instance with this constructor if you need to invoke a <see cref="T:Gtk.TagAppliedHandler" /> delegate.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndChar">
+      <MemberSignature Language="C#" Value="public Gtk.TextIter EndChar { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Gtk.TextIter</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the last character in the range this tag was applied to.</summary>
+        <value>A <see cref="T:Gtk.TextIter" /></value>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="StartChar">
+      <MemberSignature Language="C#" Value="public Gtk.TextIter StartChar { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Gtk.TextIter</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the first character in the range this tag was applied to.</summary>
+        <value>A <see cref="T:Gtk.TextIter" /></value>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Tag">
+      <MemberSignature Language="C#" Value="public Gtk.TextTag Tag { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Gtk.TextTag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the tag that was applied to the text.</summary>
+        <value>
+          <see cref="T:Gtk.TextTag" />
+        </value>
+        <remarks />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,216 @@
+<Type Name="Scale" FullName="Gtk.Scale">
+  <TypeSignature Language="C#" Maintainer="auto" Value="public class Scale : Gtk.Range" />
+  <AssemblyInfo>
+    <AssemblyName>gtk-sharp</AssemblyName>
+    <AssemblyPublicKey>
+    </AssemblyPublicKey>
+    <AssemblyVersion>2.12.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the <link location="node:gtk-sharp/programming/threads">Gtk# Thread Programming</link> for details.</ThreadSafetyStatement>
+  <Docs>
+    <summary>A base class for the concrete slider widgets; <see cref="T:Gtk.HScale" /> and <see cref="T:Gtk.VScale" />.</summary>
+    <remarks>
+      <para>A Scale is a slider control used to select a numeric value. Specific manipulation can be done with methods and properties on its base class, <see cref="T:Gtk.Range" />. To set the value of a scale, you would normally use the <see cref="P:Gtk.Range.Value" /> property. To detect changes to the value, connect an event handler to the <see cref="F:Gtk.Range.ValueChanged" /> event.</para>
+    </remarks>
+  </Docs>
+  <Base>
+    <BaseTypeName>Gtk.Range</BaseTypeName>
+  </Base>
+  <Interfaces>
+  </Interfaces>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Scale (IntPtr raw);" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
+      <Parameters>
+        <Parameter Name="raw" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <summary>Internal constructor</summary>
+        <param name="raw">Pointer to the C object.</param>
+        <remarks>
+          <para>This is an internal constructor, and should not be used by user code.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValuePos">
+      <MemberSignature Language="C#" Value="public Gtk.PositionType ValuePos { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Gtk.PositionType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+      </Parameters>
+      <Docs>
+        <summary>Manage the position of the value, relative to the slider.</summary>
+        <value>Where the value is currently being drawn.</value>
+        <remarks>
+          <para>Note: This property is only meaningful if a value is being drawn. To ensure a value is drawn, use the <see cref="P:Gtk.Scale.DrawValue" /> property.</para>
+        </remarks>
+      </Docs>
+      <Attributes>
+        <Attribute>
+          <AttributeName>GLib.Property("value-pos")</AttributeName>
+        </Attribute>
+      </Attributes>
+    </Member>
+    <Member MemberName="DrawValue">
+      <MemberSignature Language="C#" Value="public bool DrawValue { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+      </Parameters>
+      <Docs>
+        <summary>Manage whether a label is displayed to show the current value.</summary>
+        <value>Whether the value is currently being displayed.</value>
+        <remarks>
+          <para>Use the <see cref="P:Gtk.Scale.ValuePos" /> property to alter the position of displayed value.</para>
+        </remarks>
+      </Docs>
+      <Attributes>
+        <Attribute>
+          <AttributeName>GLib.Property("draw-value")</AttributeName>
+        </Attribute>
+      </Attributes>
+    </Member>
+    <Member MemberName="Digits">
+      <MemberSignature Language="C#" Value="public int Digits { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+      </Parameters>
+      <Docs>
+        <summary>Manage the number of decimal places for this slider.</summary>
+        <value>The number of decimal places currently being displayed.</value>
+        <remarks />
+      </Docs>
+      <Attributes>
+        <Attribute>
+          <AttributeName>GLib.Property("digits")</AttributeName>
+        </Attribute>
+      </Attributes>
+    </Member>
+    <Member MemberName="FormatValue">
+      <MemberSignature Language="C#" Value="public event Gtk.FormatValueHandler FormatValue;" />
+      <MemberType>Event</MemberType>
+      <ReturnValue>
+        <ReturnType>Gtk.FormatValueHandler</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Allows the format of the displayed value to be altered.</summary>
+        <remarks>
+          <para>Note: The signature of this event handler is currently incorrect.</para>
+        </remarks>
+      </Docs>
+      <Attributes>
+        <Attribute>
+          <AttributeName>GLib.Signal("format_value")</AttributeName>
+        </Attribute>
+      </Attributes>
+    </Member>
+    <Member MemberName="GType">
+      <MemberSignature Language="C#" Value="public static GLib.GType GType { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>GLib.GType</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>GType Property.</summary>
+        <value>a <see cref="T:GLib.GType" /></value>
+        <remarks>Returns the native <see cref="T:GLib.GType" /> value for <see cref="T:Gtk.Scale" />.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnFormatValue">
+      <MemberSignature Language="C#" Value="protected virtual string OnFormatValue (double value);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>Default handler for the <see cref="M:Gtk.Scale.FormatValue" /> event.</summary>
+        <param name="value">a <see cref="T:System.Double" /></param>
+        <returns>a <see cref="T:System.String" /></returns>
+        <remarks>Override this method in a subclass to provide a default handler for the <see cref="M:Gtk.Scale.FormatValue" /> event.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Scale (GLib.GType gtype);" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
+      <Parameters>
+        <Parameter Name="gtype" Type="GLib.GType" />
+      </Parameters>
+      <Docs>
+        <summary>Protected Constructor.</summary>
+        <param name="gtype">a <see cref="T:GLib.GType" /></param>
+        <remarks>Chain to this constructor if you have manually registered a native <see cref="T:GLib.GType" /> value for your subclass.</remarks>
+      </Docs>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete</AttributeName>
+        </Attribute>
+      </Attributes>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Scale ();" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
+      <Parameters />
+      <Docs>
+        <summary>Protected constructor.</summary>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Layout">
+      <MemberSignature Language="C#" Value="public Pango.Layout Layout { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Pango.Layout</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the <see cref="T:Pango.Layout" /> used to display the scale. </summary>
+        <value>a <see cref="T:Pango.Layout" /></value>
+        <remarks>
+        </remarks>
+        <since version="Gtk# 2.4" />
+      </Docs>
+    </Member>
+    <Member MemberName="GetLayoutOffsets">
+      <MemberSignature Language="C#" Value="public void GetLayoutOffsets (out int x, out int y);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="y" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <summary>
+	  Obtains the coordinates where the scale will draw the <see cref="T:Pango.Layout" />
+	  representing the text in the scale. 
+	</summary>
+        <param name="x">a <see cref="T:System.Int32" />, location to store X offset of layout</param>
+        <param name="y">a <see cref="T:System.Int32" />, location to store Y offset of layout </param>
+        <remarks>
+	  Remember that when working with Pango you need to convert to
+	  and from pixels using PANGO_PIXELS() or <see cref="F:Pango.Scale.PangoScale" />.
+	  If <see cref="P:Gtk.Scale.DrawValue" /> is <see langword="false" />, the return values are 
+	  undefined.
+	</remarks>
+        <since version="Gtk# 2.4" />
+      </Docs>
+    </Member>
+  </Members>
+</Type>
