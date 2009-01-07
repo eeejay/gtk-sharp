@@ -1,0 +1,539 @@
+<Type Name="Screen" FullName="Gdk.Screen">
+  <TypeSignature Language="C#" Maintainer="auto" Value="public class Screen : GLib.Object" />
+  <AssemblyInfo>
+    <AssemblyName>gdk-sharp</AssemblyName>
+    <AssemblyPublicKey>
+    </AssemblyPublicKey>
+    <AssemblyVersion>2.12.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the <link location="node:gtk-sharp/programming/threads">Gtk# Thread Programming</link> for details.</ThreadSafetyStatement>
+  <Docs>
+    <summary>Object representing a physical screen.</summary>
+    <remarks>To be added</remarks>
+  </Docs>
+  <Base>
+    <BaseTypeName>GLib.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+  </Interfaces>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Screen (IntPtr raw);" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
+      <Parameters>
+        <Parameter Name="raw" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <summary>Internal constructor</summary>
+        <param name="raw">Pointer to the C object.</param>
+        <remarks>
+          <para>This is an internal constructor, and should not be used by user code.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public static Gdk.Screen Default { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Gdk.Screen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The default screen of the default display.</summary>
+        <value>The default <see cref="T:Gdk.Screen" />.</value>
+        <remarks>Returns null if there iss no default display.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NMonitors">
+      <MemberSignature Language="C#" Value="public int NMonitors { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added</summary>
+        <value>a <see cref="T:System.Int32" /></value>
+        <remarks>
+          <para>Returns an <see cref="T:System.Int32" /> of the number of monitors attached to the current <see cref="T:Gdk.Screen" />.</para>
+          <para>The following example will print the number of monitors in the current display to the console.</para>
+          <example>
+            <code lang="C#">Display theDisplay = Display.OpenDefaultLibgtkOnly();
+Screen defaultScreen = theDisplay.DefaultScreen;
+int numMonitors = defaultScreen.NMonitors;
+Console.WriteLine("You have {0} monitors.",numMonitors);
+</code>
+          </example>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RootWindow">
+      <MemberSignature Language="C#" Value="public Gdk.Window RootWindow { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Gdk.Window</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added</summary>
+        <value>a <see cref="T:Gdk.Window" /></value>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public int Height { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The height of the screen in pixels.</summary>
+        <value>A <see cref="T:System.Int32" /> with the number of pixels of the screen.</value>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Display">
+      <MemberSignature Language="C#" Value="public Gdk.Display Display { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Gdk.Display</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added</summary>
+        <value>a <see cref="T:Gdk.Display" /></value>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Number">
+      <MemberSignature Language="C#" Value="public int Number { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added</summary>
+        <value>a <see cref="T:System.Int32" /></value>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemVisual">
+      <MemberSignature Language="C#" Value="public Gdk.Visual SystemVisual { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Gdk.Visual</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added</summary>
+        <value>a <see cref="T:Gdk.Visual" /></value>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeightMm">
+      <MemberSignature Language="C#" Value="public int HeightMm { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The height of the screen in millimeters.</summary>
+        <value>A <see cref="T:System.Int32" /> with the height of the screen in millimeters.</value>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public int Width { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The width of the screen in pixels.</summary>
+        <value>A <see cref="T:System.Int32" /> with the number of pixels of the screen.</value>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="WidthMm">
+      <MemberSignature Language="C#" Value="public int WidthMm { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The width of the screen in millimeters.</summary>
+        <value>A <see cref="T:System.Int32" /> with the width of the screen in millimeters.</value>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultColormap">
+      <MemberSignature Language="C#" Value="public Gdk.Colormap DefaultColormap { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Gdk.Colormap</ReturnType>
+      </ReturnValue>
+      <Parameters>
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <value>a <see cref="T:Gdk.Colormap" /></value>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RgbVisual">
+      <MemberSignature Language="C#" Value="public Gdk.Visual RgbVisual { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Gdk.Visual</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added</summary>
+        <value>a <see cref="T:Gdk.Visual" /></value>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemColormap">
+      <MemberSignature Language="C#" Value="public Gdk.Colormap SystemColormap { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Gdk.Colormap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added</summary>
+        <value>a <see cref="T:Gdk.Colormap" /></value>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RgbColormap">
+      <MemberSignature Language="C#" Value="public Gdk.Colormap RgbColormap { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Gdk.Colormap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added</summary>
+        <value>a <see cref="T:Gdk.Colormap" /></value>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler SizeChanged;" />
+      <MemberType>Event</MemberType>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+      <Attributes>
+        <Attribute>
+          <AttributeName>GLib.Signal("size_changed")</AttributeName>
+        </Attribute>
+      </Attributes>
+    </Member>
+    <Member MemberName="GetMonitorAtWindow">
+      <MemberSignature Language="C#" Value="public int GetMonitorAtWindow (Gdk.Window window);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="window" Type="Gdk.Window" />
+      </Parameters>
+      <Docs>
+        <summary>Gets the monitor that contains most of the given window.</summary>
+        <param name="window">A <see cref="T:Gdk.Window" /> whose main monitor is claimed.</param>
+        <returns>A <see cref="T:System.Int32" /> indicating the required monitor.</returns>
+        <remarks>If the window does not intersect any of the monitors, then the a close one is returned.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMonitorAtPoint">
+      <MemberSignature Language="C#" Value="public int GetMonitorAtPoint (int x, int y);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <summary>Gets the monitor number where the point is located.</summary>
+        <param name="x">A <see cref="T:System.Int32" /> representing the x coordinate on the virtual screen.</param>
+        <param name="y">A <see cref="T:System.Int32" /> representing the y coordinate on the virtual screen.</param>
+        <returns>A <see cref="T:System.Int32" /> indicating the monitor where the point is located.</returns>
+        <remarks>If the point isn't in any monitor, then the nearest monitor is returned.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BroadcastClientMessage">
+      <MemberSignature Language="C#" Value="public void BroadcastClientMessage (Gdk.Event evnt);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="evnt" Type="Gdk.Event" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="evnt">a <see cref="T:Gdk.Event" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSetting">
+      <MemberSignature Language="C#" Value="public bool GetSetting (string name, GLib.Value value);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="GLib.Value" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="name">a <see cref="T:System.String" /></param>
+        <param name="value">a <see cref="T:GLib.Value" /></param>
+        <returns>a <see cref="T:System.Boolean" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MakeDisplayName">
+      <MemberSignature Language="C#" Value="public string MakeDisplayName ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:System.String" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GType">
+      <MemberSignature Language="C#" Value="public static GLib.GType GType { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>GLib.GType</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>GType Property.</summary>
+        <value>a <see cref="T:GLib.GType" /></value>
+        <remarks>Returns the native <see cref="T:GLib.GType" /> value for <see cref="T:Gdk.Screen" />.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSizeChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnSizeChanged ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Default handler for the <see cref="M:Gdk.Screen.SizeChanged" /> event.</summary>
+        <remarks>Override this method in a subclass to provide a default handler for the <see cref="M:Gdk.Screen.SizeChanged" /> event.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Screen (GLib.GType gtype);" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
+      <Parameters>
+        <Parameter Name="gtype" Type="GLib.GType" />
+      </Parameters>
+      <Docs>
+        <summary>Protected Constructor.</summary>
+        <param name="gtype">a <see cref="T:GLib.GType" /></param>
+        <remarks>Chain to this constructor if you have manually registered a native <see cref="T:GLib.GType" /> value for your subclass.</remarks>
+      </Docs>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete</AttributeName>
+        </Attribute>
+      </Attributes>
+    </Member>
+    <Member MemberName="ToplevelWindows">
+      <MemberSignature Language="C#" Value="public Gdk.Window[] ToplevelWindows { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Gdk.Window[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <value>a <see cref="T:Gdk.Window[]" /></value>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListVisuals">
+      <MemberSignature Language="C#" Value="public Gdk.Visual[] ListVisuals ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Gdk.Visual[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:Gdk.Visual[]" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMonitorGeometry">
+      <MemberSignature Language="C#" Value="public Gdk.Rectangle GetMonitorGeometry (int monitor_num);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Gdk.Rectangle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="monitor_num" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="monitor_num">a <see cref="T:System.Int32" /></param>
+        <returns>a <see cref="T:Gdk.Rectangle" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Screen ();" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RgbaVisual">
+      <MemberSignature Language="C#" Value="public Gdk.Visual RgbaVisual { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Gdk.Visual</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A Visual to use for creating Drawables with an alpha channel.</summary>
+        <value>a  <see cref="T:Gdk.Visual" /> or <see langword="null" />.</value>
+        <remarks>Returns <see langword="null" /> if the capability is not available. See <see cref="M:Gdk.Screen.RgbaColormap" /> for caveats.</remarks>
+        <since version="Gtk# 2.8" />
+      </Docs>
+    </Member>
+    <Member MemberName="RgbaColormap">
+      <MemberSignature Language="C#" Value="public Gdk.Colormap RgbaColormap { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Gdk.Colormap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A Colormap to use for creating Drawables with an alpha channel.</summary>
+        <value>a  <see cref="T:Gdk.Colormap" /> or <see langword="null" />.</value>
+        <remarks>The windowing system may not support this capability, in which case <see langword="null" /> will be returned. Even if a non-<see langword="null" /> value is returned, its possible that the drawable's alpha channel won't be honored when displaying on screen: in particular, for X an appropriate windowing manager and compositing manager must be running to provide appropriate display.</remarks>
+        <since version="Gtk# 2.8" />
+      </Docs>
+    </Member>
+    <Member MemberName="CompositedChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler CompositedChanged;" />
+      <MemberType>Event</MemberType>
+      <Attributes>
+        <Attribute>
+          <AttributeName>GLib.Signal("composited_changed")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Raised when the composited status of the screen changes.</summary>
+        <remarks />
+        <since version="Gtk# 2.10" />
+      </Docs>
+    </Member>
+    <Member MemberName="OnCompositedChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnCompositedChanged ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Default handler for the <see cref="M:Gdk.Screen.CompositedChanged" /> event.</summary>
+        <remarks />
+        <since version="Gtk# 2.10" />
+      </Docs>
+    </Member>
+    <Member MemberName="Resolution">
+      <MemberSignature Language="C#" Value="public double Resolution { set; get; };" />
+      <MemberType>Property</MemberType>
+      <Attributes>
+        <Attribute>
+          <AttributeName>GLib.Property("resolution")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The resolution for fonts on the screen.</summary>
+        <value>the scaling factor from pango units to cairo units.</value>
+        <remarks>The default is -1.</remarks>
+        <since version="Gtk# 2.10" />
+      </Docs>
+    </Member>
+    <Member MemberName="FontOptions">
+      <MemberSignature Language="C#" Value="public Cairo.FontOptions FontOptions { set; get; };" />
+      <MemberType>Property</MemberType>
+      <Attributes>
+        <Attribute>
+          <AttributeName>GLib.Property("font-options")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Cairo.FontOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The default font options for the screen.</summary>
+        <value>The default <see cref="Cairo.FontOptions" />.</value>
+        <remarks>If multiple accesses to this information are needed, you may want to consider cacheing the result.  The get accessor needs to use reflection to create the FontOptions instance and could possibly cause performance issues if called frequently.</remarks>
+        <since version="Gtk# 2.10" />
+      </Docs>
+    </Member>
+    <Member MemberName="ActiveWindow">
+      <MemberSignature Language="C#" Value="public Gdk.Window ActiveWindow { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Gdk.Window</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The current active window for the screen.</summary>
+        <value>a <see cref="Gdk.Window" />.</value>
+        <remarks>Returns <see langword="null" /> if there is no current active window or the window manager doesn't support the necessary properties to determine the active window.</remarks>
+        <since version="Gtk# 2.10" />
+      </Docs>
+    </Member>
+    <Member MemberName="IsComposited">
+      <MemberSignature Language="C#" Value="public bool IsComposited { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates if compositing is supported.</summary>
+        <value>If <see langword="true" /> compositing is supported.</value>
+        <remarks>Indicates if RGBA visuals with an alpha value can be expected to have their alpha channel drawn properly on screen.</remarks>
+        <since version="Gtk# 2.10" />
+      </Docs>
+    </Member>
+    <Member MemberName="WindowStack">
+      <MemberSignature Language="C#" Value="public Gdk.Window[] WindowStack { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Gdk.Window[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The current window stack for the screen.</summary>
+        <value>an array of <see cref="Gdk.Window" /> representing the window stack.</value>
+        <remarks>This property depends on optional Window Manager features.  If the feature is not supported, an empty array will be returned.</remarks>
+        <since version="Gtk# 2.10" />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

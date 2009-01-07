@@ -1,0 +1,48 @@
+<Type Name="AttrLanguage" FullName="Pango.AttrLanguage">
+  <TypeSignature Language="C#" Maintainer="auto" Value="public class AttrLanguage : Pango.Attribute" />
+  <AssemblyInfo>
+    <AssemblyName>pango-sharp</AssemblyName>
+    <AssemblyPublicKey>
+    </AssemblyPublicKey>
+    <AssemblyVersion>2.12.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the <link location="node:gtk-sharp/programming/threads">Gtk# Thread Programming</link> for details.</ThreadSafetyStatement>
+  <Docs>
+    <summary>An attribute that represents a language</summary>
+    <remarks />
+  </Docs>
+  <Base>
+    <BaseTypeName>Pango.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AttrLanguage (Pango.Language language);" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
+      <Parameters>
+        <Parameter Name="language" Type="Pango.Language" />
+      </Parameters>
+      <Docs>
+        <summary>Creates a new language tag attribute</summary>
+        <param name="language">a <see cref="T:Pango.Language" /></param>
+        <remarks />
+        <since version="Gtk# 2.4" />
+      </Docs>
+    </Member>
+    <Member MemberName="Language">
+      <MemberSignature Language="C#" Value="public Pango.Language Language { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Pango.Language</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>The language represented by this attribute</summary>
+        <value>a <see cref="T:Pango.Language" /></value>
+        <remarks />
+        <since version="Gtk# 2.4" />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

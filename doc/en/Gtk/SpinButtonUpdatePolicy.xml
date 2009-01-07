@@ -1,0 +1,48 @@
+<Type Name="SpinButtonUpdatePolicy" FullName="Gtk.SpinButtonUpdatePolicy">
+  <TypeSignature Language="C#" Maintainer="Lee Mallabone" Value="public enum SpinButtonUpdatePolicy" />
+  <AssemblyInfo>
+    <AssemblyName>gtk-sharp</AssemblyName>
+    <AssemblyPublicKey>
+    </AssemblyPublicKey>
+    <AssemblyVersion>2.12.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the <link location="node:gtk-sharp/programming/threads">Gtk# Thread Programming</link> for details.</ThreadSafetyStatement>
+  <Docs>
+    <summary>Dictates how a <see cref="T:Gtk.SpinButton" /> is refreshed when its value is updated.</summary>
+    <remarks />
+  </Docs>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>GLib.GType(typeof(Gtk.SpinButtonUpdatePolicyGType))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Members>
+    <Member MemberName="Always">
+      <MemberSignature Language="C#" Value="Always" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Gtk.SpinButtonUpdatePolicy</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When refreshing a <see cref="T:Gtk.SpinButton" />, the value is always displayed.</summary>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="IfValid">
+      <MemberSignature Language="C#" Value="IfValid" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Gtk.SpinButtonUpdatePolicy</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When refreshing a <see cref="T:Gtk.SpinButton" />, the value is only displayed if it is valid. A value is valid if it lies within the bounds of the spin button's <see cref="T:Gtk.Adjustment" />.</summary>
+        <remarks />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

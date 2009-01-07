@@ -1,0 +1,63 @@
+<Type Name="InputMode" FullName="Gdk.InputMode">
+  <TypeSignature Language="C#" Maintainer="auto" Value="public enum InputMode" />
+  <AssemblyInfo>
+    <AssemblyName>gdk-sharp</AssemblyName>
+    <AssemblyPublicKey>
+    </AssemblyPublicKey>
+    <AssemblyVersion>2.12.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the <link location="node:gtk-sharp/programming/threads">Gtk# Thread Programming</link> for details.</ThreadSafetyStatement>
+  <Docs>
+    <summary>An enumeration that describes the mode of an input device.</summary>
+    <remarks>None.</remarks>
+  </Docs>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>GLib.GType(typeof(Gdk.InputModeGType))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Members>
+    <Member MemberName="Disabled">
+      <MemberSignature Language="C#" Value="Disabled" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Gdk.InputMode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>The device is disabled and will not report any events.</summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Screen">
+      <MemberSignature Language="C#" Value="Screen" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Gdk.InputMode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>The device is enabled. The device's coordinate space maps to the entire screen.</summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Window">
+      <MemberSignature Language="C#" Value="Window" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Gdk.InputMode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>The device is enabled. The device's coordinate space is mapped to a single window. The manner in which this window is chosen is undefined, but it will typically be the same way in which the focus window for key events is determined.</summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

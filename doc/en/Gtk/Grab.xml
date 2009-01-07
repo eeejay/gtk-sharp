@@ -1,0 +1,72 @@
+<Type Name="Grab" FullName="Gtk.Grab">
+  <TypeSignature Language="C#" Value="public class Grab" Maintainer="auto" />
+  <AssemblyInfo>
+    <AssemblyName>gtk-sharp</AssemblyName>
+    <AssemblyPublicKey>
+    </AssemblyPublicKey>
+    <AssemblyVersion>2.12.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the <link location="node:gtk-sharp/programming/threads">Gtk# Thread Programming</link> for details.</ThreadSafetyStatement>
+  <Docs>
+    <summary>Grab methods allow you to limit the keyboard and mouse interaction to a particular widget or window.</summary>
+    <remarks />
+  </Docs>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static void Add (Gtk.Widget widget);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="widget" Type="Gtk.Widget" />
+      </Parameters>
+      <Docs>
+        <summary>Makes the specified widget the currently grabbed widget. This means that interaction with other widgets in the same application is blocked and mouse as well as keyboard events are delivered to this widget.</summary>
+        <param name="widget">The <see cref="T:Gtk.Widget" /> that grabs keyboard and pointer events.</param>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public static void Remove (Gtk.Widget widget);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="widget" Type="Gtk.Widget" />
+      </Parameters>
+      <Docs>
+        <summary>Removes the grab from the given widget. You have to pair calls to <see cref="T:Gtk.Grab.Add" /> and <see cref="T:Gtk.Grab.Remove" />.</summary>
+        <param name="widget">The <see cref="T:Gtk.Widget" /> which gives up the grab.</param>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Grab ();" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
+      <Parameters />
+      <Docs>
+        <summary>Don't use.</summary>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public static Gtk.Widget Current { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Gtk.Widget</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Queries the current grab of the default window group.</summary>
+        <value>A <see cref="T:Gtk.Widget" /> which currently has the grab or <see langword="null" /> if no grab is active.</value>
+        <remarks />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

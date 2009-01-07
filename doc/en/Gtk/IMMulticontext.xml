@@ -1,0 +1,96 @@
+<Type Name="IMMulticontext" FullName="Gtk.IMMulticontext">
+  <TypeSignature Language="C#" Maintainer="auto" Value="public class IMMulticontext : Gtk.IMContext" />
+  <AssemblyInfo>
+    <AssemblyName>gtk-sharp</AssemblyName>
+    <AssemblyPublicKey>
+    </AssemblyPublicKey>
+    <AssemblyVersion>2.12.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the <link location="node:gtk-sharp/programming/threads">Gtk# Thread Programming</link> for details.</ThreadSafetyStatement>
+  <Docs>
+    <summary>
+      An input method context object that manages the use of multiple input method contexts for a widget
+    </summary>
+    <remarks />
+  </Docs>
+  <Base>
+    <BaseTypeName>Gtk.IMContext</BaseTypeName>
+  </Base>
+  <Interfaces>
+  </Interfaces>
+  <Members>
+    <Member MemberName="AppendMenuitems">
+      <MemberSignature Language="C#" Value="public void AppendMenuitems (Gtk.MenuShell menushell);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="menushell" Type="Gtk.MenuShell" />
+      </Parameters>
+      <Docs>
+        <summary>Add menu items for various available input methods to a menu;
+	  the menuitems, when selected, will switch the input method
+	  for the context and the global default input method.</summary>
+        <param name="menushell">a <see cref="T:Gtk.MenuShell" /></param>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IMMulticontext (IntPtr raw);" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
+      <Parameters>
+        <Parameter Name="raw" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <summary>Internal constructor</summary>
+        <param name="raw">Pointer to the C object.</param>
+        <remarks>
+          <para>This is an internal constructor, and should not be used by user code.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IMMulticontext ();" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
+      <Parameters />
+      <Docs>
+        <summary>Basic constructor.</summary>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="GType">
+      <MemberSignature Language="C#" Value="public static GLib.GType GType { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>GLib.GType</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>GType Property.</summary>
+        <value>a <see cref="T:GLib.GType" /></value>
+        <remarks>Returns the native <see cref="T:GLib.GType" /> value for <see cref="T:Gtk.IMMulticontext" />.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected IMMulticontext (GLib.GType gtype);" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
+      <Parameters>
+        <Parameter Name="gtype" Type="GLib.GType" />
+      </Parameters>
+      <Docs>
+        <summary>Protected Constructor.</summary>
+        <param name="gtype">a <see cref="T:GLib.GType" /></param>
+        <remarks>Chain to this constructor if you have manually registered a native <see cref="T:GLib.GType" /> value for your subclass.</remarks>
+      </Docs>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete</AttributeName>
+        </Attribute>
+      </Attributes>
+    </Member>
+  </Members>
+</Type>

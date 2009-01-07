@@ -1,0 +1,63 @@
+<Type Name="CrossingMode" FullName="Gdk.CrossingMode">
+  <TypeSignature Language="C#" Maintainer="auto" Value="public enum CrossingMode" />
+  <AssemblyInfo>
+    <AssemblyName>gdk-sharp</AssemblyName>
+    <AssemblyPublicKey>
+    </AssemblyPublicKey>
+    <AssemblyVersion>2.12.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the <link location="node:gtk-sharp/programming/threads">Gtk# Thread Programming</link> for details.</ThreadSafetyStatement>
+  <Docs>
+    <summary>Specifies the crossing mode for <see cref="T:Gdk.EventCrossing" /></summary>
+    <remarks>None.</remarks>
+  </Docs>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>GLib.GType(typeof(Gdk.CrossingModeGType))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Members>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="Normal" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Gdk.CrossingMode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Crossing because of pointer motion.</summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Grab">
+      <MemberSignature Language="C#" Value="Grab" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Gdk.CrossingMode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Crossing because a grab is activated.</summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ungrab">
+      <MemberSignature Language="C#" Value="Ungrab" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Gdk.CrossingMode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Crossing because a grab is deactivated.</summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

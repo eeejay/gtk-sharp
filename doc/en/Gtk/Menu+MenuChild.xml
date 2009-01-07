@@ -1,0 +1,87 @@
+<Type Name="Menu+MenuChild" FullName="Gtk.Menu+MenuChild">
+  <TypeSignature Language="C#" Value="public class Menu.MenuChild : Gtk.Container.ContainerChild" />
+  <AssemblyInfo>
+    <AssemblyName>gtk-sharp</AssemblyName>
+    <AssemblyVersion>2.12.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Gtk.Container+ContainerChild</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Members>
+    <Member MemberName="BottomAttach">
+      <MemberSignature Language="C#" Value="public int BottomAttach { set; get; };" />
+      <MemberType>Property</MemberType>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Gtk.ChildProperty("bottom-attach")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The row that the bottom of the menu item is attached to.</summary>
+        <value>the row</value>
+        <remarks>See <see cref="M:Gtk.Menu.Attach" /> for more details</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TopAttach">
+      <MemberSignature Language="C#" Value="public int TopAttach { set; get; };" />
+      <MemberType>Property</MemberType>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Gtk.ChildProperty("top-attach")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The row that the top of the menu item is attached to.</summary>
+        <value>the row</value>
+        <remarks>See <see cref="M:Gtk.Menu.Attach" /> for more details</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LeftAttach">
+      <MemberSignature Language="C#" Value="public int LeftAttach { set; get; };" />
+      <MemberType>Property</MemberType>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Gtk.ChildProperty("left-attach")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The column that the left side of the menu item is attached to.</summary>
+        <value>the column</value>
+        <remarks>See <see cref="M:Gtk.Menu.Attach" /> for more details</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RightAttach">
+      <MemberSignature Language="C#" Value="public int RightAttach { set; get; };" />
+      <MemberType>Property</MemberType>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Gtk.ChildProperty("right-attach")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The column that the right side of the menu item is attached to.</summary>
+        <value>the column</value>
+        <remarks>See <see cref="M:Gtk.Menu.Attach" /> for more details</remarks>
+      </Docs>
+    </Member>
+  </Members>
+  <Docs>
+    <summary>A child of a <see cref="T:Gtk.Menu" />, used to interact with its container child properties.</summary>
+    <remarks>
+    </remarks>
+    <since version="Gtk# 2.4" />
+  </Docs>
+</Type>
